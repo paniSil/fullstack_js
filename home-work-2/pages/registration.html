@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+</head>
+
+<body>
+  <h1>Registration</h1>
+
+  <div>
+    <a href="../index.html">Main</a>
+    <a href="articles.html">Articles</a>
+    <a href="catalog.html">Catalog</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="page-nav.html">Navigation</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="registration.html">Registration</a>
+  </div>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+    <fieldset>
+      <legend>Legal Name</legend>
+
+      <div>
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text" name="first-name" placeholder="First Name" required>
+      </div>
+
+      <div>
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" name="last-name" placeholder="Last Name" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Photo</legend>
+
+      <div>
+        <label for="photo">Add Photo</label>
+        <input type="file" name="photo" id="photo">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contacts</legend>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+      </div>
+
+      <div>
+        <label for="website">Website</label>
+        <input type="text" name="website" id="website" placeholder="Website">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Info</legend>
+
+      <div>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option selected disabled value="">Gender</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="birthday">Date of Birth</label>
+        <input type="date" name="birthday" id="birthday">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <div>
+        <label for="cuisine">Cuisine</label>
+        <select name="cuisine[]" id="cuisine" multiple>
+          <option disabled value="">Choose your favourite cuisine</option>
+          <option value="ukrainian">Ukrainian</option>
+          <option value="italian">Italian</option>
+          <option value="japanese">Japanese</option>
+          <option value="american">American</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>About</legend>
+
+      <div>
+        <label for="about">About</label>
+        <textarea name="about" id="about" placeholder="Additional info about yourself"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Actions</legend>
+
+      <div>
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+      </div>
+    </fieldset>
+  </form>
+
+  <footer>
+    <div>
+      &copy;Mariia Zvonkova
+    </div>
+  </footer>
+
+</body>
+
+</html>
