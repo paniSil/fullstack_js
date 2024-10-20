@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>Registration</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a class="nav-link link-margin" href="../index.html">Main</a></li>
+        <li><a class="nav-link link-margin" href="articles.html">Articles</a></li>
+        <li><a class="nav-link link-margin" href="catalog.html">Catalog</a></li>
+        <li><a class="nav-link link-margin" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link link-margin" href="page-nav.html">Navigation</a></li>
+        <li><a class="nav-link link-margin" href="contacts.html">Contacts</a></li>
+        <li><a class="nav-link link-margin" href="registration.html">Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <h1>Registration</h1>
+
+      <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+        <fieldset>
+          <h3>Legal Name</h3>
+
+          <div class="form-item">
+            <label for="first-name">First Name</label>
+            <input class="input-name" id="first-name" type="text" name="first-name" placeholder="First Name" required>
+          </div>
+
+          <div class="form-item">
+            <label for="last-name">Last Name</label>
+            <input class="input-name" id="last-name" type="text" name="last-name" placeholder="Last Name" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <h3>Photo</h3>
+
+          <div class="form-item">
+            <label for="photo">Add Photo</label>
+            <input type="file" name="photo" id="photo">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <h3>Contacts</h3>
+
+          <div class="form-item">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+          </div>
+
+          <div class="form-item">
+            <label for="website">Website</label>
+            <input type="text" name="website" id="website" placeholder="Website">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <h3>Info</h3>
+
+          <div class="form-item">
+            <label for="pronouns">Pronouns</label>
+            <select name="pronouns" id="pronouns">
+              <option selected disabled value="">Pronouns</option>
+              <option value="she / her">She / Her</option>
+              <option value="he / him">He / Him</option>
+              <option value="they / them">They / Them</option>
+            </select>
+          </div>
+
+          <div class="form-item">
+            <label for="birthday">Date of Birth</label>
+            <input type="date" name="birthday" id="birthday">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <h3>Preferences</h3>
+
+          <div class="form-item">
+            <label for="cuisine">Cuisine</label>
+            <select name="cuisine[]" id="cuisine" multiple>
+              <option disabled value="">Choose your favourite cuisine</option>
+              <option value="ukrainian">Ukrainian</option>
+              <option value="italian">Italian</option>
+              <option value="japanese">Japanese</option>
+              <option value="american">American</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <h3>About</h3>
+
+          <div class="form-item">
+            <label for="about">About</label>
+            <textarea name="about" id="about" placeholder="Additional info about yourself"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="button-section">
+            <button class="ok-button" type="submit">Register</button>
+            <button class="clear-button" type="reset">Clear</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      &copy;Mariia Zvonkova
+    </div>
+  </footer>
+
+</body>
+
+</html>
